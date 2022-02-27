@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obten tu vuelo</title>
+    <link rel="stylesheet" href="./Vuelos.css">
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//js.skyscnr.com/sttc/oc-registry/components/base-stylesheet/0.1.40/build//static/css/main.8bc229d9.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <header>
+
+
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo"><img id="logo" src ="/Resources/LogoBlanco.png"></div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a id="Vuelos" href="#">Vuelos</a></li>
+                    <li><a href="#">Alojamientos</a></li>
+                    <li><a href="#">Comienza</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <br><br>
+        <h2 style="text-align:center; float:center ">Aprende a reservar vuelos con nosotros:</h2>
+        <br><br><br>
+        <h3 style="text-align:center; float:center ">Primero, elige tu destino y fechas deseadas:</h3>
+        <div class="HeroImage_SearchWrapper__MTdmZ"><link rel="stylesheet" href="//js.skyscnr.com/sttc/oc-registry/components/flights-search-controls/5.4.5/build//static/css/main.a00e0f29.css">
+            <div id="flights-search-controls-root">
+                <div class="App_App__OTY5Y" data-reactroot="">
+                    <div class="App_flights-sc-wrapper__MWE3N">
+                        <form>
+                            <div>
+                                <div>
+                                    <label class="BpkRadio_bpk-radio__OTA1M TripTypeSelector_TripTypeSelector__YmFjM">
+                                        <input type="radio" class="BpkRadio_bpk-radio__input__NmI0N" name="trip-type-selector" aria-label="Ida y vuelta" aria-invalid="false" id="fsc-trip-type-selector-return" checked="">
+                                        <div class="BpkRadio_bpk-radio__circle__MDcwN"></div>
+                                        <span aria-hidden="true">Ida y vuelta</span>
+                                    </label>
+                                    <label class="BpkRadio_bpk-radio__OTA1M TripTypeSelector_TripTypeSelector__YmFjM">
+                                        <input type="radio" class="BpkRadio_bpk-radio__input__NmI0N" name="trip-type-selector" aria-label="Sólo ida" aria-invalid="false" id="fsc-trip-type-selector-one-way">
+                                        <div class="BpkRadio_bpk-radio__circle__MDcwN"></div>
+                                        <span aria-hidden="true">Sólo ida</span>
+                                    </label>
+                                    <label class="BpkRadio_bpk-radio__OTA1M TripTypeSelector_TripTypeSelector__YmFjM">
+                                        <input type="radio" class="BpkRadio_bpk-radio__input__NmI0N" name="trip-type-selector" aria-label="Múltiples destinos" aria-invalid="false" id="fsc-trip-type-selector-multi-destination">
+                                        <div class="BpkRadio_bpk-radio__circle__MDcwN"></div>
+                                        <span aria-hidden="true">Múltiples destinos</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="SingleDestControls_SingleDestControls__ODEyN">
+                                <div class="SingleDestControls_places-wrapper__N2M3M SingleDestControls_places-wrapper-oneline__OTk3N">
+                                    <div class="SingleDestControls_origin-wrapper__YzBkN SingleDestControls_origin-wrapper-oneline__OTA1N">
+                                        <div class="LocationSelector_LocationSelector__NTU4M">
+                                            <label class="BpkLabel_bpk-label__MDg2Y App_form-label__ZjA3O" for="fsc-origin-search" aria-hidden="true">Desde</label>
+                                            <div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-fsc-origin-search" aria-expanded="false" class="bpk-autosuggest__container">
+                                                <input type="text" class="BpkInput_bpk-input__ZDdkM SingleDestControls_fsc-large-above-tablet__Mjg0Y SingleDestControls_fsc-docked-first-above-mobile__YWQxN LocationSelector_fsc-location-input__NDRiO" aria-invalid="false" value="Madrid (MAD)" name="fsc-origin-search" autocomplete="off" aria-controls="react-autowhatever-fsc-origin-search" id="fsc-origin-search" placeholder="País, ciudad o aeropuerto" dir="auto">
+                                            </div>
+                                        </div>
+                                        <label class="BpkCheckbox_bpk-checkbox__OTI4N BpkCheckbox_bpk-checkbox--white__NGUwO App_flights-sc-checkbox__ODUxO App_flights-sc-checkbox-oneline__NzdmY"><input type="checkbox" class="BpkCheckbox_bpk-checkbox__input__ZWQ5N BpkCheckbox_bpk-checkbox__input-white__MWYzY" name="originFlexible" aria-label="Añade aeropuertos cercanos" aria-invalid="false" data-indeterminate="false" tabindex="2">
+                                            <span class="BpkCheckbox_bpk-checkbox__label__ZDNhN BpkCheckbox_bpk-checkbox__label--small__NjdkN" aria-hidden="true">Añade aeropuertos cercanos</span>
+                                        </label>
+                                    </div>
+                                    <div class="SingleDestControls_switch-wrapper__NDliM SingleDestControls_switch-wrapper-oneline__Y2VmO">
+                                        <label class="BpkLabel_bpk-label__MDg2Y SingleDestControls_form-label__ZmY1Z" for="destination-switch-button" aria-hidden="true">&nbsp;</label>
+                                        <div class="SwitchButton_SwitchButton__MmExM">
+                                            <button id="destination-switch-button" aria-label="Intercambiar origen y destino" class="SwitchButton_SwitchButton__button__YjVjY" type="button" tabindex="2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" style="width:1.125rem;height:1.125rem">
+                                                    <path d="M9 7.5A1.5 1.5 0 0 0 10.5 9h6.878l-1.939 1.94a1.5 1.5 0 0 0 2.122 2.12l4.5-4.5a1.5 1.5 0 0 0 0-2.12l-4.5-4.5a1.5 1.5 0 1 0-2.122 2.12L17.38 6H10.5A1.5 1.5 0 0 0 9 7.5zm6 9a1.5 1.5 0 0 0-1.5-1.5H6.62l1.94-1.94a1.5 1.5 0 0 0-2.122-2.12l-4.5 4.5a1.5 1.5 0 0 0 0 2.12l4.5 4.5a1.5 1.5 0 0 0 2.122-2.12L6.62 18h6.88a1.5 1.5 0 0 0 1.5-1.5z" clip-rule="evenodd"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="SingleDestControls_destination-wrapper__NDQyN SingleDestControls_destination-wrapper-oneline__OWEwN">
+                                        <div class="LocationSelector_LocationSelector__NTU4M">
+                                            <label class="BpkLabel_bpk-label__MDg2Y App_form-label__ZjA3O" for="fsc-destination-search" aria-hidden="true">A</label>
+                                            <div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-fsc-destination-search" aria-expanded="false" class="bpk-autosuggest__container">
+                                                <input type="text" class="BpkInput_bpk-input__ZDdkM SingleDestControls_fsc-large-above-tablet__Mjg0Y SingleDestControls_fsc-docked-middle-above-tablet__MmIwM SingleDestControls_fsc-docked-last-on-tablet__MDI0N LocationSelector_fsc-location-input__NDRiO" aria-invalid="false" value="" name="fsc-destination-search" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-fsc-destination-search" id="fsc-destination-search" placeholder="País, ciudad o aeropuerto" dir="auto">
+                                                <div id="react-autowhatever-fsc-destination-search" role="listbox" class="BpkAutosuggest_bpk-autosuggest__suggestions-container__MTUxZ"></div>
+                                            </div>
+                                        </div>
+                                        <label class="BpkCheckbox_bpk-checkbox__OTI4N BpkCheckbox_bpk-checkbox--white__NGUwO App_flights-sc-checkbox__ODUxO App_flights-sc-checkbox-oneline__NzdmY">
+                                            <input type="checkbox" class="BpkCheckbox_bpk-checkbox__input__ZWQ5N BpkCheckbox_bpk-checkbox__input-white__MWYzY" name="destinationFlexible" aria-label="Añade aeropuertos cercanos" aria-invalid="false" data-indeterminate="false" tabindex="2">
+                                            <span class="BpkCheckbox_bpk-checkbox__label__ZDNhN BpkCheckbox_bpk-checkbox__label--small__NjdkN" aria-hidden="true">Añade aeropuertos cercanos</span>
+                                        </label></div></div><div class="SingleDestControls_dates-wrapper__ZTQxM SingleDestControls_dates-wrapper-oneline__ODIyY"><div class="DateRangeSelector_DateRangeSelector__NmIxN"><div class="DateRangeSelector_form-item__YjE0N DateRangeSelector_form-item-oneline__NTc5N"><label class="BpkLabel_bpk-label__MDg2Y App_form-label__ZjA3O" for="depart-fsc-datepicker-button">Salida</label><button id="depart-fsc-datepicker-button" class="DateInput_DateInput__ZWIxN DateInput_DateInput--docked__MWRjN DateInput_DateInput--large__MTI0N" type="button" title="Fecha de salida"><span class="DateInput_DateInput--text__MzMyY">23/2/22</span></button></div><div class="DateRangeSelector_form-item__YjE0N DateRangeSelector_form-item-oneline__NTc5N"><label class="BpkLabel_bpk-label__MDg2Y App_form-label__ZjA3O" for="return-fsc-datepicker-button">Regreso</label><button id="return-fsc-datepicker-button" class="DateInput_DateInput__ZWIxN DateInput_DateInput--docked__MWRjN DateInput_DateInput--large__MTI0N" type="button" title="Fecha de vuelta"><span class="DateInput_DateInput--text__MzMyY">2/3/22</span></button></div></div></div><div class="SingleDestControls_cabin-class-travellers-wrapper__MTE0N SingleDestControls_cabin-class-travellers-wrapper-oneline__OGQ5N"><div class="CabinClassTravellersSelector_CabinClassTravellers__MmJmM"><div class="CabinClassTravellersSelector_form-item__YjE2M"><label class="BpkLabel_bpk-label__MDg2Y App_form-label__ZjA3O" for="CabinClassTravellersSelector_fsc-class-travellers-trigger__OTYyM">Clase de cabina y viajeros</label><button id="CabinClassTravellersSelector_fsc-class-travellers-trigger__OTYyM" name="class-travellers-trigger" class="CabinClassTravellersSelector_CabinClassTravellersSelector__class-travellers-trigger__ZjQ0N App_fsc-select__NmNjN App_fsc-select-large-above-tablet__MWFkO App_fsc-select-docked-last-above-tablet__MTUxY" type="button"><span class="CabinClassTravellersSelector_CabinClassTravellersSelector__triggertext__ZTM1N">1 adulto, Turista</span></button></div></div></div><div class=""><label class="BpkCheckbox_bpk-checkbox__OTI4N BpkCheckbox_bpk-checkbox--white__NGUwO App_flights-sc-checkbox__ODUxO App_flights-sc-checkbox-oneline__NzdmY App_flights-sc-directonly__ZDVlN"><input type="checkbox" class="BpkCheckbox_bpk-checkbox__input__ZWQ5N BpkCheckbox_bpk-checkbox__input-white__MWYzY" name="directOnly" aria-label="Solo vuelos directos" aria-invalid="false" data-indeterminate="false"><span class="BpkCheckbox_bpk-checkbox__label__ZDNhN BpkCheckbox_bpk-checkbox__label--small__NjdkN" aria-hidden="true">Solo vuelos directos</span></label></div><div class="SingleDestControls_with-hotels-wrapper__OTI0Z SingleDestControls_with-hotels-wrapper-oneline__OTI0N"></div></div><div><button type="submit" class="BpkButtonBase_bpk-button__NTM4Y BpkButtonBase_bpk-button--large__ZWQyM App_submit-button__NGFhZ App_submit-button-oneline__MmU3N" aria-label="Buscar">Buscar<!-- --> <span style="line-height:1.5rem;display:inline-block;margin-top:0.1875rem;vertical-align:top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="width:1.5rem;height:1.5rem" class="BpkIcon_bpk-icon--rtl-support__Y2U3N" fill="rgb(255, 255, 255)"><path d="M11.293 19.713a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414l-7-7a1 1 0 0 0-1.438 1.39l.024.024 5.293 5.293H5a1 1 0 0 0 0 2h11.586L11.293 18.3a1 1 0 0 0 0 1.414z"></path></svg></span></button></div></form></div></div></div>
+            <script>window['flights-search-controls'] = { props: {"redirectHost":"","locale":"es-ES","market":"ES","autosuggestBaseUrl":"","rootNodeSelector":"#pagewrap","useComponentRegistry":true,"scaffolding":false,"componentVersion":"5.4.5","oneLine":true,"strings":{"ktxtFlexible_Ticket_Checkbox":"Solo billetes flexibles","ktxtPriceAlerts_DirectFlightsOnly":"Solo vuelos directos","ktxtSearchControls_AddLeg":"Añadir otro vuelo","ktxtSearchControls_AddNearbyAirport":"Añade aeropuertos cercanos","ktxtSearchControls_Adults":"Adultos","ktxtSearchControls_AdultsSingular":"adulto","ktxtSearchControls_AutoSuggest_Clear":"Borrar","ktxtSearchControls_AutoSuggest_ExploreEverywhere":"Explorar cualquier lugar","ktxtSearchControls_AutoSuggest_PopularDestination":"Destinos populares","ktxtSearchControls_Autosuggest_DistanceFrom":"A @@distance@@&nbsp;km de @@place@@, @@country@@","ktxtSearchControls_Autosuggest_DistanceFrom_Miles":"A @@distance@@ millas de @@place@@, @@country@@","ktxtSearchControls_BtnCancel":"Cancelar","ktxtSearchControls_CabinClassTerm_Business":"Business","ktxtSearchControls_CabinClassTerm_Economy":"Turista","ktxtSearchControls_CabinClassTerm_First":"Primera","ktxtSearchControls_CabinClassTerm_PremiumEconomy":"Turista superior","ktxtSearchControls_CabinClassTerm_SelectPromptTitle":"Solo podemos mostrar precios en clase turista para esta búsqueda.","ktxtSearchControls_CabinClassTerm_Title":"Clase","ktxtSearchControls_CantDecide":"¿No te decides?","ktxtSearchControls_CheapestMonth":"Mes más económico","ktxtSearchControls_Children":"Niños","ktxtSearchControls_CountryCityAirportPlaceholder":"País, ciudad o aeropuerto","ktxtSearchControls_DateRangeConfirm":"Confirmar","ktxtSearchControls_DateRangeSelect":"Elige las fechas","ktxtSearchControls_Datepicker_CompareAcrossWholeMonth":"Compara un mes entero:","ktxtSearchControls_Datepicker_SpecificDate":"Fecha específica","ktxtSearchControls_DatesOutOfSequence":"Introduce una fecha válida. Los vuelos deben salir antes del vuelo anterior.","ktxtSearchControls_DepartureDate":"Fecha de salida","ktxtSearchControls_Done":"Listo","ktxtSearchControls_EconomyOnly":"Para ver las opciones de clase business y primera clase, especifica las fechas exactas o la ciudad de destino.","ktxtSearchControls_EnterValidDate":"Introduce una fecha válida.","ktxtSearchControls_EnterValidDestination":"Introduce una ubicación de destino válida.","ktxtSearchControls_EnterValidOrigin":"Introduce una ubicación de origen válida.","ktxtSearchControls_EverywhereSuggestion_SubHeading":"Haz clic aquí para buscar en Cualquier lugar","ktxtSearchControls_EverywhereSuggestion_SubHeading_Mobile":"Toca este enlace para buscar en Cualquier lugar","ktxtSearchControls_From":"Desde","ktxtSearchControls_MapLink_Map":"Mapa","ktxtSearchControls_MultiCity":"Múltiples destinos","ktxtSearchControls_OneWay":"Sólo ida","ktxtSearchControls_Passengers_adultRange":"16 años o más","ktxtSearchControls_Passengers_childAge":"Edad del niño @@childNumber@@","ktxtSearchControls_Passengers_childRange":"De 0 a 15 años","ktxtSearchControls_Passengers_childrenValidation":"Indica la edad de todos los niños.","ktxtSearchControls_Passengers_decreaseNumberAdults":"Quitar adultos","ktxtSearchControls_Passengers_decreaseNumberChildren":"Quitar niños","ktxtSearchControls_Passengers_increaseNumberAdults":"Añadir adultos","ktxtSearchControls_Passengers_increaseNumberChildren":"Añadir niños","ktxtSearchControls_Passengers_infantValidation":"Solo puede viajar 1 niño (de 0 a 2 años) por adulto","ktxtSearchControls_Passengers_legal1":"La edad que tengas a la hora de viajar tiene que coincidir con la categoría de edad que hayas reservado. Las aerolíneas aplican restricciones a los menores de 18 años que viajan solos.","ktxtSearchControls_Passengers_legal2":"Las políticas de límite de edad para viajar con niños pueden variar; consúltalo con la aerolínea antes de hacer la reserva.","ktxtSearchControls_Passengers_selectAge":"Seleccionar edad","ktxtSearchControls_Return":"Ida y vuelta","ktxtSearchControls_ReturnDate":"Fecha de vuelta","ktxtSearchControls_SearchFlights":"Buscar","ktxtSearchControls_Searching":"Buscando","ktxtSearchControls_SwitchOriginDestination":"Intercambiar origen y destino","ktxtSearchControls_To":"A","ktxtSearchControls_TravellersAndCabinClassTitle":"Clase de cabina y viajeros","ktxtSearchControls_Travellers_Plural":"viajeros","ktxtSearchControls_WithHotels":"Mostrar también hoteles","ktxtSearchControls_as_any":"Todos","ktxtSearchControls_as_everywhere":"Cualquier lugar","ktxtSearchControls_filter_depart":"Salida","ktxtSearchControls_filter_return":"Regreso","ktxtSearchControls_flex_dates":"Mes completo","ktxtSearchControls_same_places_warn":"No se pueden realizar búsquedas con la misma ciudad de procedencia y de destino.","ktxtURLFlights":"vuelos","ktxtURLFlightsFrom":"vuelos-desde","ktxtURLTransport":"transporte"},"enableDatePickerAutoExpand":false} };</script>
+            <script src="//js.skyscnr.com/sttc/oc-registry/components/flights-search-controls/5.4.5/build//static/js/main.3f62992f.js" crossorigin="anonymous"></script>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="rrss">
+            <p id="Encuentranos">Encuéntranos</p>
+            <ul class="socialIcons">
+                <li class="facebook"><a href="https://www.facebook.com/skyscanner/"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
+                <li class="twitter"><a href="https://twitter.com/skyscanner"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
+                <li class="instagram"><a href="https://www.instagram.com/skyscanner/"><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
+                <li class="pinterest"><a href="https://www.youtube.com/user/SkyscannerLtd"><i class="fa fa-fw fa-youtube"></i>YouTube</a></li>
+            </ul>
+
+        </div>
+    </footer>
+</div>
+</body>
+</html>
